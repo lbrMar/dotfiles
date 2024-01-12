@@ -1,0 +1,65 @@
+
+# Ignore swap files
+*.swp
+
+# Ignore session files
+Session.vim
+
+# Ignore temporary files
+.*.un~
+
+# Ignore autosave files
+.*.swo
+
+# Ignore persistent undo files
+.*.un~
+
+# Ignore undo files
+*.bak
+
+# Ignore Neovim backup files
+*~
+
+# Ignore Neovim backup folders
+__pycache__/
+
+# Ignore Neovim undo and swap folders
+*.un~/
+*.swp/
+
+# Ignore Neovim plug-ins managed by vim-plug
+plugged/
+
+# Ignore Neovim undodir
+undo/
+
+# Ignore Neovim view directory
+view/
+
+# Ignore Neovim UltiSnips backup
+UltiSnips/.backup/
+
+# Ignore Neovim UltiSnips session
+UltiSnips/.session/
+
+# Ignore Neovim UltiSnips undo
+UltiSnips/.undo/
+
+# Ignore Neovim undodir for Gundo
+GundoUndo/
+
+# Ignore Neovim session files
+Session.vim
+
+# Ignore Neovim startify sessions
+Startify*
+
+# Ignore Neovim coc.nvim extensions folder
+coc/extensions/
+
+# Ignore Neovim tag files
+tags
+
+# Ignore Neovim language server protocol folder
+language-servers/
+
