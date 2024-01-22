@@ -1,4 +1,3 @@
-
 -- Direcory Navigation
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
@@ -50,19 +49,17 @@ vim.api.nvim_set_keymap('v', '<leader>ac', "gcc", { noremap = false })
 function insertComment()
   -- Get the current line
   local current_line = vim.fn.getline('.')
-  
+
   -- Calculate the number of asterisks needed on each side
   local fill_length = 80 - string.len(current_line) - 5
   local fill_chars = string.rep('*', fill_length / 2)
-  
+
   -- Construct the new comment line
   local comment_line = '/' .. fill_chars .. ' ' .. current_line .. ' ' .. fill_chars .. '/'
-  
+
   -- Replace the current line with the new comment line
   vim.fn.setline('.', comment_line)
 end
 
 -- Map the function to <leader>lc
-vim.api.nvim_set_keymap('n', '<leader>c', [[:lua insertComment()<CR>]], { noremap = true, silent = true })
-
-
+vim.api.nvim_set_keymap('n', '<leader>ac', [[:lua insertComment()<CR>]], { noremap = true, silent = true })

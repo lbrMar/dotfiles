@@ -1,4 +1,3 @@
-
 -- install lazyvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -17,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require('config.globals')
 require('config.keymaps')
 
-local otps = {
+local opts = {
   defaults = {
     lazy = true,
   },
@@ -40,6 +39,5 @@ local otps = {
     notify = true,
   },
 }
-
 
 require("lazy").setup('plugins', opts)

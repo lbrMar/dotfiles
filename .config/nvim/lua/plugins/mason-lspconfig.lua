@@ -1,4 +1,3 @@
-
 local opts = {
   ensure_installed = {
     'efm',
@@ -13,4 +12,3 @@ return {
   event = 'BufReadPre',
   dependencies = "williamboman/mason.nvim",
 }
-

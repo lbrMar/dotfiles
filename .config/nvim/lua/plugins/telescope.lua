@@ -1,4 +1,3 @@
-
 local config = function()
   local telescope = require("telescope")
     telescope.setup({
@@ -27,9 +26,9 @@ local config = function()
       },
     })
   end
-  
+
 return {
-  'nvim-telescope/telescope.nvim', 
+  'nvim-telescope/telescope.nvim',
   tag = '0.1.5',
   lazy = false,
   dependencies = { 'nvim-lua/plenary.nvim' },
@@ -42,5 +41,3 @@ return {
 		vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", {}),
   },
 }
-
-
