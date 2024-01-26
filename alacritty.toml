@@ -1,0 +1,15 @@
+# alacritty.toml
+
+import = ["~/.config/alacritty/rose-pine-theme/rose-pine.toml"]
+
+[window]
+padding = { x = 5, y = 5 }
+decorations = "None"
+opacity = 0.85
+blur = true
+
+[font]
+normal = { family = "ShureTechMonoNerdFont", style = "Regular" }
+bold = { family = "ShureTechMonoNerdFont", style = "Bold" }
+italic = { family = "ShureTechMonoNerdFont", style = "Italic" }
+bold_italic = { family = "ShureTechMonoNerdFont", style = "Bold Italic" }
